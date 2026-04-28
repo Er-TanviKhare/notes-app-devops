@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
       </head>
       <body style="font-family: Arial; text-align:center; margin-top:50px;">
         <h2>📝 Test Demo Notes App</h2>
-
+        <p> Running A DEMO APP TO TEST THE FUNCTIONALITY OF THE TESTING ENVIRONMENT. </p>
         <input id="note" placeholder="Write a note..." />
         <button onclick="addNote()">Add</button>
 
