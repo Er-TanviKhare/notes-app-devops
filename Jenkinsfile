@@ -1,11 +1,15 @@
 pipeline {
     agent any
 
+    environment {
+        KUBECONFIG = '/var/lib/jenkins/.kube/config'
+    }
+
     stages {
 
         stage('Build Docker') {
             steps {
-                sh 'docker build -t notes-app .'
+                sh 'eval $(minikube docker-env) && docker build -t notes-app .'
             }
         }
 
