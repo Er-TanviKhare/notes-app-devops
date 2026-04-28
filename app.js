@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
         <title>Notes App</title>
       </head>
       <body style="font-family: Arial; text-align:center; margin-top:50px;">
-        <h2>📝 Notes App</h2>
+        <h2>📝 Test Demo Notes App</h2>
 
         <input id="note" placeholder="Write a note..." />
         <button onclick="addNote()">Add</button>
